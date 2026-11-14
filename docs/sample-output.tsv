@@ -1,0 +1,11 @@
+# 10 vectors scored, 2 invalid
+critical	CVSS31	FND-001	base 9.8 CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+critical	CVSS31	FND-002	base 10.0 CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H
+high	CVSS31	FND-003	base 8.8 CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H
+high	CVSS31	FND-004	base 7.5 CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N
+medium	CVSS31	FND-005	base 6.1 CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N
+medium	CVSS31	FND-006	base 5.5 CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N
+none	CVSS31	FND-007	base 0.0 CVSS:3.1/AV:L/AC:H/PR:H/UI:R/S:U/C:N/I:N/A:N
+medium	CVSS31	FND-008	base 5.0 CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:L/A:L
+medium	INVALID	FND-009	only CVSS:3.1 vectors are supported
+medium	INVALID	FND-010	missing base metrics

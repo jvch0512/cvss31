@@ -1,0 +1,11 @@
+FND-001  9.8  critical   5.9 impact,  3.9 exploitability
+FND-002  10.0  critical   6.0 impact,  3.9 exploitability
+FND-003  8.8  high   5.9 impact,  2.8 exploitability
+FND-004  7.5  high   3.6 impact,  3.9 exploitability
+FND-005  6.1  medium   2.7 impact,  2.8 exploitability
+FND-006  5.5  medium   3.6 impact,  1.8 exploitability
+FND-007  0.0  none   0.0 impact,  0.3 exploitability
+FND-008  5.0  medium   3.4 impact,  1.6 exploitability
+FND-009  INVALID: only CVSS:3.1 vectors are supported
+FND-010  INVALID: missing base metrics
+vectors: 10, invalid: 2, highest score: 10.0
