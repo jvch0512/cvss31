@@ -2,6 +2,8 @@
 
 cvss31 computes the CVSS v3.1 base score and severity from vector strings, following the FIRST specification (including its Roundup function), for one vector or a whole file of findings. It is a single static binary with no runtime, handy in pipelines where you only want numbers you can verify against the spec.
 
+![Terminal demo of cvss31 on its sample data](docs/demo.svg)
+
 **Live demo:** https://jvch0512.github.io/cvss31/ (Fictional finding IDs with real CVSS vectors from public CVEs.)
 
 Fortran 2008 (gfortran), no libraries. The demo page is rendered from the tool's `--tsv` output by `scripts/site.py` (Python 3, only needed to regenerate the page).
@@ -37,3 +39,13 @@ make test    # 45 checks
 ```
 
 MIT.
+
+## Code scanning (SARIF)
+
+`scripts/tsv2sarif.py` converts the `--tsv` output into SARIF 2.1.0, so findings show up in GitHub code scanning:
+
+```sh
+./bin/cvss31 --file examples/vectors.txt --tsv | python3 scripts/tsv2sarif.py --tool cvss31 --prefix examples > results.sarif
+```
+
+Upload `results.sarif` with `github/codeql-action/upload-sarif`. Severities map to SARIF levels (critical and high to error, medium to warning, low and info to note) and to a `security-severity` score.
